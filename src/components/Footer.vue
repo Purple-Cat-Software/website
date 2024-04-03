@@ -11,12 +11,12 @@ const icons = [
       justify="center"
       no-gutters
     >
-      <v-icon
-        v-for="icon in icons"
-        :key="icon"
-        :icon="icon"
-        size="x-large"
-      />
+<!--      <v-icon-->
+<!--        v-for="icon in icons"-->
+<!--        :key="icon"-->
+<!--        :icon="icon"-->
+<!--        size="x-large"-->
+<!--      />-->
       <v-col
         class="text-center mt-4"
         cols="12"
