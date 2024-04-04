@@ -21,6 +21,7 @@ const underConstruction = () => {
     Projects
   </h2>
   <v-row
+    cols="12"
     v-for="project in projects"
     :key="project.name"
   >
