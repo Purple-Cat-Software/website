@@ -7,8 +7,8 @@
   >
     Welcome to the site! Let me introduce myself. I am Michiel, founder and developer of Purple Cat Software and the
     projects. The past few years I have used many different kinds of 'productivity tools' some were great. They did what
-    they were advertised to do. However, personally I noticed I had the need to have an 'all-in-one' tool which combined
-    the most utilised functionalities in one application. This resulted in the creation of PurrfectTool.
+    they were advertised to do. However, personally I had the need for an 'all-in-one' tool which combined the most used
+    functionalities in one application. This resulted in the creation of PurrfectTool.
   </div>
 
   <div class="py-4"/>
