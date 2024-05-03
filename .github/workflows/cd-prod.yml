@@ -1,0 +1,22 @@
+name: Deployment for production
+run-name: ${{ github.actor }} ran this workflow.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_to_production_website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: build
+        run: yarn build
+      - name: deploy
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBSITE_PROD_4D385 }}
+          channelId: live
+          projectId: website-prod-4d385
