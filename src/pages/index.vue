@@ -4,7 +4,7 @@
       class="align-centerfill-height mx-auto"
       max-width="900"
     >
-      <LandingPage/>
+      <LandingPage />
     </v-responsive>
   </v-container>
   <v-container>
@@ -12,12 +12,12 @@
       class="align-centerfill-height mx-auto"
       max-width="900"
     >
-      <AboutUs/>
+      <AboutUs />
       <div class="py-4" />
-      <Projects/>
+      <Projects />
     </v-responsive>
   </v-container>
-  <Footer/>
+  <Footer />
 </template>
 
 <script lang="ts" setup>

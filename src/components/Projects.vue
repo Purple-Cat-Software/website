@@ -5,15 +5,11 @@ const projects: Project[] = [
   {
     name: "Purrfect Tool",
     subtitle: "Productivity tool with incorporated notes, task and timer",
-    description: "'All-in-one' productivity tool, die de belangrijkste elementen samenvoegt in één simpele applicatie. Hierbij wil ik de gebruiker van alle gemakken voorzien en een ‘all-in-one oplossing’ aanbieden. Deze oplossing is een combinatie van notities, taken en een timer. Dit zijn de basisonderdelen die in versie 1.0 moeten komen. Daarna is het een constante doorontwikkeling van deze applicatie en deze verder uit te breiden.",
-    linkUrl: "https://google.com"
+    description: "PurrfectTool is an application created to become the all-you-need, all-in-one productivity tool. The focus is on simplicity and an easy to use interface. This project is still a work in progress version 1.0 will be the official release.",
+    linkUrl: "https://purrfecttool-dev.web.app/"
   }
 ];
 
-const underConstruction = () => {
-  alert('Link to the application is unavailable. Due to the fact we are still developing this application.\n' +
-    'The goal is to release the application during the end of the summer.')
-}
 </script>
 
 <template>
@@ -33,7 +29,7 @@ const underConstruction = () => {
     </v-col>
     <v-col cols="9">
       <v-card
-        @click="underConstruction"
+        :href="project.linkUrl"
         append-icon="mdi-open-in-new"
         color="surface-variant"
         variant="text"

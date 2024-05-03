@@ -1,29 +1,26 @@
 <template>
   <h2 class="text-center">
-    Wie zijn we?
+    Who are we?
   </h2>
   <div
     class="text-center text-body-1"
   >
-    Welkom op deze site! Laat ik mezelf eerst even voorstellen. Ik ben Michiel, oprichter en ontwikkelaar van deze site
-    en de projecten voor Purple Cat Software. De afgelopen jaren heb ik veel verschillende ‘productivity tools’
-    gebruikt en er zijn een aantal geweldige tools. Deze doen wat ze moeten doen, alleen merkte ik snel dat ik meer
-    behoefte had aan één tool die een combinatie is van deze verschillende tools en naadloos samen gebruikt kunnen
-    worden. Daarom heb ik besloten om een nieuwe applicatie te maken die 3 elementen combineert in één tool
-    ‘PurrfectTool’.
+    Welcome to the site! Let me introduce myself. I am Michiel, founder and developer of Purple Cat Software and the
+    projects. The past few years I have used many different kinds of 'productivity tools' some were great. They did what
+    they were advertised to do. However, personally I noticed I had the need to have an 'all-in-one' tool which combined
+    the most utilised functionalities in one application. This resulted in the creation of PurrfectTool.
   </div>
 
   <div class="py-4"/>
 
   <h2 class="text-center">
-    Waarom de naam?
+    Why Purple Cat Software?
   </h2>
   <div
     class="text-center text-body-1"
   >
-    De naam is tot stand gekomen om 2 dingen te combineren die ik leuk vind. Deze zijn namelijk paars en katten. Doordat
-    ik ook software wil maken heb ik deze twee dingen bij elkaar gevoegd en zo kwam deze naam tot stand.
-    Hierbij wil ik graag ook leuke en simpele software maken en dit komt overeen met de naam. De naam zegt wat het is,
-    en de software doet wat het moet doen.
+    The name is created to combine 2 obvious things together. Namely, purple (favourite colour of myself) and a cat (the
+    type of pet I have). It is straightforward and to the point, similar to the software I want to create. The name says
+    what it is and the software does what it should do.
   </div>
 </template>
