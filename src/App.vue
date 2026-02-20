@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app theme="purpleCat">
     <v-main>
       <Hero/>
       <WhoAreWe/>
