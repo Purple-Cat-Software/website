@@ -1,11 +1,15 @@
 <script setup lang="ts">
+import kitTask from "@/assets/personal-files.svg"
+import waitingRoom from "@/assets/waiting-room.svg"
+import utility from "@/assets/utility-tool.svg"
+
 const projects = [
   {
     id: 1,
     name: 'Kit Task',
     tag: 'Saas',
     tagColor: 'primary',
-    emoji: '📊',
+    picture: kitTask,
     bgClass: 'proj-bg-1',
     description: 'Productivity tool to keep track of your notes, tasks and timers. Primarily focussed on privacy and simplicity. All the data is stored and hosted in the EU.',
     url: '#kit-tasks',
@@ -15,7 +19,7 @@ const projects = [
     name: 'Interactive Waiting Room Solution',
     tag: 'Custom Software',
     tagColor: 'amber',
-    emoji: '📺',
+    picture: waitingRoom,
     bgClass: 'proj-bg-2',
     description: 'Custom software created for an Eye Clinic based in The Netherlands. Goals is to display general information about the clinic, news, weather information and more.',
     url: '#waiting-room-software',
@@ -25,7 +29,7 @@ const projects = [
     name: 'Kit Utility',
     tag: 'Web App',
     tagColor: 'secondary',
-    emoji: '🛠️',
+    picture: utility,
     bgClass: 'proj-bg-3',
     description: 'Some custom utility tools which can be freely used. Some of the tools provided: Inss generator, BSN generator and A-number generator.',
     url: '#utilities',
@@ -63,12 +67,11 @@ const projects = [
             target="_blank"
           >
             <!-- Placeholder image area -->
-            <div
+            <v-img
               :class="['d-flex align-center justify-center', project.bgClass]"
-              style="height:200px; font-size:60px;"
-            >
-              {{ project.emoji }}
-            </div>
+              style="height:220px;"
+              :src="project.picture"
+            />
 
             <v-card-item>
               <template #prepend>
