@@ -1,11 +1,11 @@
 <script setup lang="ts">
-
+import logo from '@/assets/pcsw-cat-only.png';
 </script>
 
 <template>
   <v-footer class="footer-bar py-10 d-flex flex-column align-center">
-    <v-avatar size="48" color="primary" class="mb-3">
-      <span style="font-size:24px;">🐱</span>
+    <v-avatar size="64" color="primary" class="mb-3">
+      <v-img :src="logo"/>
     </v-avatar>
 
     <span class="display-font text-white" style="font-size:1.2rem; font-weight:700;">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const skills = [ 'Web Apps', 'DevOps', 'SaaS', 'Custom Software' ];
+const skills = [ 'Web Apps', 'DevOps', 'SaaS', 'Custom Software', 'Refactoring', 'Consultancy' ];
 const stats = [
   { value: '8+', label: 'Years of Craftsmanship', icon: 'mdi-calendar-star', iconColor: 'amber' },
   {

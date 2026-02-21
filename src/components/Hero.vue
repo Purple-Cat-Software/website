@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import logo from '@/assets/pcsw-cat-only.png';
 </script>
 
 <template>
@@ -8,8 +8,8 @@
 
       <!-- Logo avatar -->
       <div class="cat-float mb-6" style="filter: drop-shadow(0 0 28px rgba(124,58,237,.65));">
-        <v-avatar size="130" color="primary">
-          <span style="font-size:64px; line-height:1;">🐱</span>
+        <v-avatar size="180" color="primary">
+          <v-img :src="logo"/>
         </v-avatar>
       </div>
 
