@@ -1,53 +1,112 @@
 <script setup lang="ts">
-import { Project } from "../domain/Types";
-
-const projects: Project[] = [
+const projects = [
   {
-    name: "Purrfect Tool",
-    subtitle: "Productivity tool with incorporated notes, task and timer",
-    description: "PurrfectTool is an application created to become the all-you-need, all-in-one productivity tool. The focus is on simplicity and an easy to use interface. This project is still a work in progress version 1.0 will be the official release.",
-    linkUrl: "https://purrfecttool-dev.web.app/"
-  }
-];
-
+    id: 1,
+    name: 'Kit Task',
+    tag: 'Saas',
+    tagColor: 'primary',
+    emoji: '📊',
+    bgClass: 'proj-bg-1',
+    description: 'Productivity tool to keep track of your notes, tasks and timers. Primarily focussed on privacy and simplicity. All the data is stored and hosted in the EU.',
+    url: '#kit-tasks',
+  },
+  {
+    id: 2,
+    name: 'Interactive Waiting Room Solution',
+    tag: 'Custom Software',
+    tagColor: 'amber',
+    emoji: '📺',
+    bgClass: 'proj-bg-2',
+    description: 'Custom software created for an Eye Clinic based in The Netherlands. Goals is to display general information about the clinic, news, weather information and more.',
+    url: '#waiting-room-software',
+  },
+  {
+    id: 3,
+    name: 'Kit Utility',
+    tag: 'Web App',
+    tagColor: 'secondary',
+    emoji: '🛠️',
+    bgClass: 'proj-bg-3',
+    description: 'Some custom utility tools which can be freely used. Some of the tools provided: Inss generator, BSN generator and A-number generator.',
+    url: '#utilities',
+  },
+]
 </script>
 
 <template>
-  <h2 class="text-center py-4">
-    Projects
-  </h2>
-  <v-row
-    cols="12"
-    v-for="project in projects"
-    :key="project.name"
-  >
-    <v-col cols="3">
-      <v-img
-        height="150"
-        src="@/assets/organise-purrfect-tool.svg"
-      />
-    </v-col>
-    <v-col cols="9">
-      <v-card
-        :href="project.linkUrl"
-        append-icon="mdi-open-in-new"
-        color="surface-variant"
-        variant="text"
-        :subtitle="project.subtitle"
-        :title="project.name"
-        target="_blank"
-        rel="noopener noreferrer"
-        rounded="lg"
-        :text="project.description"
-      >
-        <v-overlay
-          opacity=".06"
-          scrim="primary"
-          contained
-          model-value
-          persistent
-        />
-      </v-card>
-    </v-col>
-  </v-row>
+  <div class="divider-amber"></div>
+  <section id="projects" class="bg-projects py-16">
+    <v-container>
+
+      <v-chip color="primary" variant="tonal" size="small" label class="mb-5">
+        Our Work
+      </v-chip>
+
+      <h2 class="display-font text-white mb-10"
+          style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight:700;">
+        Projects
+      </h2>
+
+      <v-row>
+        <v-col
+          v-for="project in projects"
+          :key="project.id"
+          cols="12" sm="6" lg="4"
+        >
+          <!-- v-card as a clickable anchor -->
+          <v-card
+            class="project-card h-100"
+            color="surface"
+            rounded="xl"
+            elevation="4"
+            :href="project.url"
+            target="_blank"
+          >
+            <!-- Placeholder image area -->
+            <div
+              :class="['d-flex align-center justify-center', project.bgClass]"
+              style="height:200px; font-size:60px;"
+            >
+              {{ project.emoji }}
+            </div>
+
+            <v-card-item>
+              <template #prepend>
+                <v-chip
+                  :color="project.tagColor"
+                  variant="tonal"
+                  size="x-small"
+                  label
+                  class="mr-2"
+                >
+                  {{ project.tag }}
+                </v-chip>
+              </template>
+            </v-card-item>
+
+            <v-card-title class="display-font text-white px-4"
+                          style="font-size:1.2rem; white-space:normal; line-height:1.3;">
+              {{ project.name }}
+            </v-card-title>
+
+            <v-card-text class="text-purple-lighten-3"
+                         style="font-size:.9rem; line-height:1.7; font-weight:300;">
+              {{ project.description }}
+            </v-card-text>
+
+            <v-card-actions class="px-4 pb-5">
+              <v-btn
+                color="amber"
+                variant="text"
+                append-icon="mdi-arrow-right"
+                size="small"
+              >
+                View Project
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
 </template>
