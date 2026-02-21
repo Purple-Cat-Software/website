@@ -33,15 +33,16 @@ const stats = [
         <v-col cols="12" md="6">
           <p class="text-purple-lighten-3 mb-5"
              style="font-size:1.05rem; line-height:1.85; font-weight:300;">
-            Purple Cat Software is a boutique software studio obsessed with building elegant,
-            purposeful digital products. We believe great software is invisible — it just works,
-            delights, and gets out of the way.
+            Purple Cat Software is a passionate software studio dedicated to craft <strong style="font-weight:700;">clean, simple and
+            purposeful</strong> digital solutions.
+            We believe great software should be <strong style="font-weight:700;">effortless</strong> — working seamlessly, delighting users, and
+            stying out of the way.
           </p>
           <p class="text-purple-lighten-3"
              style="font-size:1.05rem; line-height:1.85; font-weight:300;">
-            From early-stage startups to established enterprises, we partner with ambitious teams
-            to turn complex ideas into beautifully simple solutions. Clean code, bold design,
-            shipped fast.
+            🇪🇺 Our applications and data are hosted exclusively within the European Union. By choosing our services,
+            you benefit from full compliance with GDPR and European data protection standards, ensuring privacy,
+            security, and compliance for your business.
           </p>
 
           <v-divider class="my-8" color="purple-darken-3"/>
