@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Waiting Room Software',
+    name: 'Interactive Waiting Room Solution',
     tag: 'Custom Software',
     tagColor: 'amber',
     emoji: '📺',
