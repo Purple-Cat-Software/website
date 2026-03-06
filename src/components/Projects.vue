@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import { ref } from 'vue'
 import kitTask from "@/assets/personal-files.svg"
@@ -20,9 +19,9 @@ const projects = [
     picture: kitTask,
     bgClass: 'proj-bg-1',
     description: 'Productivity tool to keep track of your notes, tasks and timers. Primarily focussed on privacy and simplicity. All the data is stored and hosted in the EU.',
-    url: '#kit-tasks',
+    url: 'https://www.kittask.eu',
     details: 'Kit Task is designed with a clean, distraction-free interface to help you stay on top of your day. Built with a privacy-first approach, no data ever leaves EU borders.',
-    contact: { email: 'kittask@example.com', phone: '+31 20 000 0001' },
+    contact: { email: 'info@purplecatsoftware.com', phone: '+31 20 000 0001' },
   },
   {
     id: 2,
@@ -34,7 +33,7 @@ const projects = [
     description: 'Custom software created for an Eye Clinic based in The Netherlands. Goals is to display general information about the clinic, news, weather information and more.',
     url: '#waiting-room-software',
     details: 'Built specifically for healthcare environments, the solution displays real-time news feeds, local weather, and clinic announcements on a seamless touch-friendly interface.',
-    contact: { email: 'waitingroom@example.com', phone: '+31 20 000 0002' },
+    contact: { email: 'info@purplecatsoftware.com', phone: '+31 20 000 0002' },
   },
   {
     id: 3,
@@ -44,9 +43,9 @@ const projects = [
     picture: utility,
     bgClass: 'proj-bg-3',
     description: 'Some custom utility tools which can be freely used. Some of the tools provided: Inss generator, BSN generator and A-number generator.',
-    url: '#utilities',
+    url: 'https://www.kitutility.eu',
     details: 'Kit Utility is a free, open-access toolset for developers and administrators. All tools run client-side — nothing is sent to a server.',
-    contact: { email: 'utility@example.com', phone: '+31 20 000 0003' },
+    contact: { email: 'info@purplecatsoftware.com', phone: '+31 20 000 0003' },
   },
 ]
 </script>
@@ -123,7 +122,7 @@ const projects = [
             <!-- Expandable subsection -->
             <v-expand-transition>
               <div v-if="expandedId === project.id">
-                <v-divider color="purple-darken-3" class="mx-4" />
+                <v-divider color="purple-darken-3" class="mx-4"/>
 
                 <v-card-text class="pt-4">
                   <p class="text-purple-lighten-3 mb-4"
