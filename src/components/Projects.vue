@@ -12,7 +12,7 @@ const projects = [
     picture: kitTask,
     bgClass: 'proj-bg-1',
     description: 'Productivity tool to keep track of your notes, tasks and timers. Primarily focussed on privacy and simplicity. All the data is stored and hosted in the EU.',
-    url: '#kit-tasks',
+    url: 'kit-tasks',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     picture: waitingRoom,
     bgClass: 'proj-bg-2',
     description: 'Custom software created for an Eye Clinic based in The Netherlands. Goals is to display general information about the clinic, news, weather information and more.',
-    url: '#waiting-room-software',
+    url: 'digital-signage',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects = [
     picture: utility,
     bgClass: 'proj-bg-3',
     description: 'Some custom utility tools which can be freely used. Some of the tools provided: Inss generator, BSN generator and A-number generator.',
-    url: '#utilities',
+    url: 'kit-utility',
   },
 ]
 </script>
@@ -42,12 +42,18 @@ const projects = [
   <section id="projects" class="bg-projects py-16">
     <v-container>
 
-      <v-chip color="primary" variant="tonal" size="small" label class="mb-5">
+      <v-chip
+        color="primary"
+        variant="tonal"
+        size="small"
+        label class="mb-5"
+      >
         Our Work
       </v-chip>
 
       <h2 class="display-font text-white mb-10"
-          style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight:700;">
+          style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight:700;"
+      >
         Projects
       </h2>
 
@@ -63,8 +69,11 @@ const projects = [
             color="surface"
             rounded="xl"
             elevation="4"
-            :href="project.url"
-            target="_blank"
+            :to="{
+              name: 'project',
+              params: {project: project.url},
+              query: {title: project.name}
+            }"
           >
             <!-- Placeholder image area -->
             <v-img

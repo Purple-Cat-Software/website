@@ -1,23 +1,13 @@
-/**
- * main.ts
- *
- * Bootstraps Vuetify and other plugins then mounts the App`
- */
-
-// Plugins
 import { registerPlugins } from '@/plugins'
-
-// Components
 import App from './App.vue'
-
-// Composables
 import { createApp } from 'vue'
-
-// Styles
+import { router } from "@/router/Router.ts";
 import 'unfonts.css'
 import '@/assets/style.css';
 
+//https://v3.vuetifyjs.com/en/features/internationalization/#supported-languages
 const app = createApp(App)
+  .use(router);
 
 registerPlugins(app)
 

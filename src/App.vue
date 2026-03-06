@@ -1,17 +1,9 @@
 <template>
   <v-app theme="purpleCat">
     <v-main>
-      <Hero/>
-      <WhoAreWe/>
-      <Projects/>
-      <Footer/>
+      <RouterView/>
     </v-main>
   </v-app>
 </template>
 
-<script setup lang="ts">
-import Hero from "@/components/Hero.vue";
-import WhoAreWe from "@/components/WhoAreWe.vue";
-import Projects from "@/components/Projects.vue";
-import Footer from "@/components/Footer.vue";
-</script>
+<script setup lang="ts"></script>
