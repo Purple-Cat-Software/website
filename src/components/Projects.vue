@@ -21,7 +21,7 @@ const projects = [
     description: 'Productivity tool to keep track of your notes, tasks and timers. Primarily focussed on privacy and simplicity. All the data is stored and hosted in the EU.',
     url: 'https://www.kittask.eu',
     details: 'Kit Task is designed with a clean, distraction-free interface to help you stay on top of your day. Built with a privacy-first approach, no data ever leaves EU borders.',
-    contact: { email: 'info@purplecatsoftware.com', phone: '+31 20 000 0001' },
+    contact: { email: 'info@purplecatsoftware.com' },
   },
   {
     id: 2,
@@ -31,9 +31,9 @@ const projects = [
     picture: waitingRoom,
     bgClass: 'proj-bg-2',
     description: 'Custom software created for an Eye Clinic based in The Netherlands. Goals is to display general information about the clinic, news, weather information and more.',
-    url: '#waiting-room-software',
-    details: 'Built specifically for healthcare environments, the solution displays real-time news feeds, local weather, and clinic announcements on a seamless touch-friendly interface.',
-    contact: { email: 'info@purplecatsoftware.com', phone: '+31 20 000 0002' },
+    url: undefined,
+    details: 'If you want to know more what we can do for you, get in touch!\nThe starting price is €500 euro for a starting application including the necessary hardware (excluding monitor/tv). Complete support for a year, and a free monthly update.',
+    contact: { email: 'info@purplecatsoftware.com' },
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const projects = [
     description: 'Some custom utility tools which can be freely used. Some of the tools provided: Inss generator, BSN generator and A-number generator.',
     url: 'https://www.kitutility.eu',
     details: 'Kit Utility is a free, open-access toolset for developers and administrators. All tools run client-side — nothing is sent to a server.',
-    contact: { email: 'info@purplecatsoftware.com', phone: '+31 20 000 0003' },
+    contact: { email: 'info@purplecatsoftware.com' },
   },
 ]
 </script>
@@ -133,11 +133,13 @@ const projects = [
                   <div class="text-purple-lighten-3" style="font-size:.85rem;">
                     <div class="d-flex align-center mb-2">
                       <v-icon color="amber" size="16" class="mr-2">mdi-email-outline</v-icon>
-                      <span>{{ project.contact.email }}</span>
-                    </div>
-                    <div class="d-flex align-center">
-                      <v-icon color="amber" size="16" class="mr-2">mdi-phone-outline</v-icon>
-                      <span>{{ project.contact.phone }}</span>
+                      <a
+                        :href="'mailto:' + project.contact.email"
+                        @click.stop
+                        class="text-decoration-none text-purple-lighten-3"
+                      >
+                        {{ project.contact.email }}
+                      </a>
                     </div>
                   </div>
                 </v-card-text>
@@ -146,6 +148,7 @@ const projects = [
 
             <v-card-actions class="px-4 pb-5">
               <v-btn
+                v-if="project.url !== undefined"
                 color="amber"
                 variant="text"
                 append-icon="mdi-arrow-right"
