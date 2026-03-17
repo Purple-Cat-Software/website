@@ -8,7 +8,7 @@ import logo from '@/assets/pcsw-cat-only.png';
       <v-img :src="logo"/>
     </v-avatar>
 
-    <span class="display-font text-white" style="font-size:1.2rem; font-weight:700;">
+    <span class="display-font footer-name" style="font-size:1.2rem; font-weight:700;">
         Purple Cat Software
       </span>
 

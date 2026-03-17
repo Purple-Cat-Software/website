@@ -59,8 +59,7 @@ const projects = [
         Our Work
       </v-chip>
 
-      <h2 class="display-font text-white mb-10"
-          style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight:700;">
+      <h2 class="display-font section-heading mb-10" style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight:700;">
         Projects
       </h2>
 
@@ -109,12 +108,12 @@ const projects = [
               </template>
             </v-card-item>
 
-            <v-card-title class="display-font text-white px-4"
+            <v-card-title class="card-title-text display-font px-4"
                           style="font-size:1.2rem; white-space:normal; line-height:1.3;">
               {{ project.name }}
             </v-card-title>
 
-            <v-card-text class="text-purple-lighten-3"
+            <v-card-text class="card-body-text"
                          style="font-size:.9rem; line-height:1.7; font-weight:300;">
               {{ project.description }}
             </v-card-text>
@@ -125,18 +124,18 @@ const projects = [
                 <v-divider color="purple-darken-3" class="mx-4"/>
 
                 <v-card-text class="pt-4">
-                  <p class="text-purple-lighten-3 mb-4"
+                  <p class="card-body-text mb-4"
                      style="font-size:.9rem; line-height:1.7; font-weight:300;">
                     {{ project.details }}
                   </p>
 
-                  <div class="text-purple-lighten-3" style="font-size:.85rem;">
+                  <div class="card-body-text" style="font-size:.85rem;">
                     <div class="d-flex align-center mb-2">
                       <v-icon color="amber" size="16" class="mr-2">mdi-email-outline</v-icon>
                       <a
                         :href="'mailto:' + project.contact.email"
                         @click.stop
-                        class="text-decoration-none text-purple-lighten-3"
+                        class="text-decoration-none card-body-text"
                       >
                         {{ project.contact.email }}
                       </a>

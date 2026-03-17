@@ -22,7 +22,7 @@ const stats = [
         About Us
       </v-chip>
 
-      <h2 class="display-font text-white mb-10"
+      <h2 class="display-font section-heading mb-10"
           style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight:700;">
         Who We Are
       </h2>
@@ -31,21 +31,19 @@ const stats = [
 
         <!-- Body text + skill chips -->
         <v-col cols="12" md="6">
-          <p class="text-purple-lighten-3 mb-5"
-             style="font-size:1.05rem; line-height:1.85; font-weight:300;">
+          <p class="body-text" style="font-size:1.05rem; line-height:1.85; font-weight:300;">
             Purple Cat Software is a passionate software studio dedicated to craft <strong style="font-weight:700;">clean, simple and
             purposeful</strong> digital solutions.
             We believe great software should be <strong style="font-weight:700;">effortless</strong> — working seamlessly, delighting users, and
             stying out of the way.
           </p>
-          <p class="text-purple-lighten-3"
-             style="font-size:1.05rem; line-height:1.85; font-weight:300;">
+          <p class="body-text" style="font-size:1.05rem; line-height:1.85; font-weight:300;">
             🇪🇺 Our applications and data are hosted exclusively within the European Union. By choosing our services,
             you benefit from full compliance with GDPR and European data protection standards, ensuring privacy,
             security, and compliance for your business.
           </p>
 
-          <v-divider class="my-8" color="purple-darken-3"/>
+          <v-divider class="my-8" color="primary" opacity="0.2" />
 
           <!-- Skill chips — v-chip inside a v-row/v-col grid -->
           <v-row dense>
@@ -82,7 +80,7 @@ const stats = [
                      style="font-size:2.4rem; font-weight:900; line-height:1;">
                   {{ stat.value }}
                 </div>
-                <div class="text-purple-lighten-3 mt-1" style="font-size:.85rem;">
+                <div class="stat-label-text mt-1" style="font-size:.85rem;">
                   {{ stat.label }}
                 </div>
               </v-col>
